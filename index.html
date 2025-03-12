@@ -248,9 +248,32 @@ img{
     overflow: hidden;
     
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    background-color:black;
+    color: hotpink;
+    border-radius: 10px;
+    &:hover{
+        animation: fade 1s infinite;
+    }
+    
+}
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
     </style>
 </head>
 <body>
+    
     <br>
     <div class="bounce">
 <center>
@@ -307,5 +330,8 @@ loading
 </center>  
     </div>
 </div>
+
+<br>
+<button class="btn">Button Opacity on hover</button>
 </body>
 </html>
