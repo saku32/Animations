@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bounce{
+            0% {
+
+            }
+             50% {
+             transform: translateY(-30px);
+            }
+        }
+        @keyframes rotate{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes loader{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes opacity{
+            0% {
+            opacity: 1;
+            }
+            100% {
+           opacity: 0;
+            }
+        }
+        @keyframes translate{
+            0%{
+
+            }
+            25% {
+                transform: translate(25vh,150px);
+            }
+            50% {
+                transform: translate(50vh,0px);
+            }
+            75% {
+                transform: translate(75vh,150px);
+            }
+            100% {
+                transform: translate(100vh,0px);
+            }
+        }
+        @keyframes shaking{
+            0% {
+
+            }
+            100%{
+                transform: translateX(200px);
+            }
+        }
+        @keyframes color{
+            0%{
+
+            }
+            25%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%{
+                 background-color: palevioletred;
+            }
+            100% {
+                background-color: aqua;
+            }
+            
+
+        }
+        @keyframes profile{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .bounce{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aqua;
+            animation: bounce 1s infinite;
+            margin-bottom: 10px;
+        }
+        .rotate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgb(68, 129, 60);
+            animation: rotate 2s infinite;
+            margin-bottom: 50px;
+        }
+        .loader{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            border: 10px solid gray;
+            border-top-color: blue;
+            animation: loader 2s infinite;
+            margin-bottom: 50px;
+        }
+        .opacity{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: rgb(68, 129, 60);
+            animation: opacity 8s infinite;
+            margin-bottom: 100px;
+        }
+        .translate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rgb(189, 87, 114);
+            animation: translate 2s infinite;
+            margin-bottom: 100px;
+        }
+.shaking{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgb(209, 160, 74);
+            animation: shaking 2s infinite;
+            margin-bottom: 50px;
+}
+.color{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgb(198, 59, 59);
+            animation: color 2s infinite;
+            margin-bottom: 50px;
+}
+.profile{
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            width: 90px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+           border-radius: 50%;
+           border: 15px solid rgb(142, 71, 150) ;
+           border-top-color: blue;
+           position: relative;
+           animation: profile 2s infinite;
+
+           &:hover{
+            animation: profile 2s infinite;
+            position: absolute;
+           }
+}
+.load {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            width: 90px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+           border-radius: 50%;
+           border: 15px solid rgb(142, 71, 150) ;
+           border-top-color: blue;
+           position: absolute;
+           animation: profile 2s infinite;
+           top:0% ;
+
+           &:hover{
+            animation: profile 2s infinite;
+            
+           
+}
+}
+.profile2{
+    position: relative;
+    
+    height:90px ;
+    width: 90px;
+}
+
+img{
+    border-radius: 50%;
+    margin: 5px;
+    height: 110%;
+    width: 110%;
+}
+.bar{
+    background-color: brown;
+    color: white;
+    width: 50%;
+    height: 25px;
+    border-radius: 15px;
+
+        
+        animation: bar 10s linear infinite;
+}
+
+@keyframes bar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+.container {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+    </style>
+</head>
+<body>
+    <br>
+    <div class="bounce">
+<center>
+    bounce
+</center>
+    </div>
+    <br>
+    <div class="rotate">
+        <center>
+            rotate
+        </center>
+    </div>
+    <br>
+    <div class="loader">
+<center>
+    loading animation
+</center>
+    </div>
+    <div class="opacity">
+        <center>
+            opacity invisible
+        </center>
+    </div>
+    <div class="translate">
+<center>
+    moving ball
+</center>
+    </div>
+    <br>
+    <div class="shaking">
+        <center>
+            slide animation
+        </center>
+    </div>
+    <div class="color">
+        <center>
+            colour change
+        </center>
+    </div>
+    
+    <div class="profile2">
+        
+        <img src="https://static.vecteezy.com/system/resources/previews/020/765/399/original/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg" alt="" >
+
+        <div class="load"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <div class="bar">
+    <center>  
+loading
+</center>  
+    </div>
+</div>
+</body>
+</html>
